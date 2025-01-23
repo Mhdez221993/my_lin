@@ -9,7 +9,7 @@ class EmptyFile
   end
 
   def check_if_empty_file
-    class_offense.push_offenses(" #{file}:1:1: w: Lint/EmtyFile: Empty file detected") if File.zero?(file)
+    class_offense.push_offenses(" #{file}:1:1: w: Lint/EmtyFile: Empty file detected") if File.empty?(file)
   end
 
   def check_last_line
@@ -22,6 +22,6 @@ class EmptyFile
   private
 
   def call_check_last_line
-    check_last_line unless File.zero?(file)
+    check_last_line unless File.empty?(file)
   end
 end
