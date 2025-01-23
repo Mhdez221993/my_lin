@@ -35,5 +35,13 @@ describe EmptyFile do
       empty = EmptyFile.new('mock.rb', offense)
       expect { empty.check_last_line }.to raise_error(NoMethodError)
     end
+
+    it 'does not add an offense if the last line ends with a newline' do
+      File.write('mock_line_with_newline.rb', "Hello World!\n")
+      empty = EmptyFile.new('mock_line_with_newline.rb', offense)
+      empty.check_last_line
+      expect(offense.count_offenses).to eq 0
+      File.delete('mock_line_with_newline.rb')
+    end
   end
 end
