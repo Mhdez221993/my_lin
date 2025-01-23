@@ -6,6 +6,10 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
+    - "db/schema.rb"
+    - "bin/*"
+    - "config/**/*"
+    - "spec/**/*"
 
   DisplayCopNames: true
 
