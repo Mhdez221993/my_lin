@@ -13,7 +13,6 @@ In this project we are looking for the following errors:
 
 ![linter1](https://user-images.githubusercontent.com/67757001/165179584-371a4314-504f-46f2-baa4-60171ede1667.jpeg)
 
-[Go Live](https://replit.com/join/nssqxwoaye-mhdez)
 
 ## Built With
 
@@ -41,17 +40,13 @@ To test the code, run  `rspec`  from the root of the folder using the terminal.
 
 ## Instructions
 
-1) Open your terminal:
-    - On Windows => <code>Win + R</code>
-    - On Linux => <code>ctrl + alt + T</code>
-    - On Mac => <code>Control + Option + Shift + T</code>
+1) `git clone git@github.com:Mhdez221993/rubocop.git`
 
-2) In your terminal run:
-    - <code>./bin/main.rb</code> this will inspect all the files in the actual directory
+2) `bundle`
 
-3) you can provide a path to test a specific file in the same directory or outside by typing:
-    - `./bin/main.rb some_file_in_my_directory.rb`
-    - `./bin/main.rb ../../some_file.rb`
+3) You can provide a path to test a specific file in the same directory or outside by typing. If no path is given, this project will be checked for errors:
+    - `./bin/main.rb some_path.rb`
+    - `./bin/main.rb`
 
 ## Good and bad code examples
 
